@@ -8,7 +8,7 @@ import send from '../assets/send.svg'
 // Socket
 const socket = io('ws://localhost:3030')
 
-const Messages = ({ account, messages, currentChannel, hasJoined }) => {
+const Messages = ({ account, messages, currentChannel }) => {
   const [message, setMessage] = useState("")
 
   const messageEndRef = useRef(null)
